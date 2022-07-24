@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+      integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+      integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+      crossorigin=""
+    ></script>
+  </head>
+  <body>
+    <!-- add offset value dynamically using the API -->
+    <div class="heading-container">
+      <h1>IP Address Tracker</h1>
+      <form class="text-form">
+        <input
+          type="text"
+          class="text-field"
+          id="text-field"
+          placeholder="Search for any domain or IP address"
+        />
+        <input type="submit" class="submit" value="" />
+        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="14">
+          <path fill="none" stroke="#FFF" stroke-width="3" d="M2 1l6 6-6 6" />
+        </svg>
+      </form>
+    </div>
+    <div id="map"></div>
+
+    <div class="info-container">
+      <div class="addres">
+        <p class="ip-adders">IP ADRESS</p>
+        <h2 class="address">192.212.174.101</h2>
+      </div>
+      <div class="addres">
+        <p class="ip-adders">LOCATION</p>
+        <h2 class="address">
+          Brooklyn, NY<br />
+          10001
+        </h2>
+      </div>
+      <div class="addres">
+        <p class="ip-adders">TIMEZONE</p>
+        <h2 class="address">UTC-05:00</h2>
+      </div>
+      <div class="addres">
+        <p class="ip-adders">ISP</p>
+        <h2 class="address">
+          SpaceX
+          <br />
+          Starlink
+        </h2>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Prosper Ndebele</a>.
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
